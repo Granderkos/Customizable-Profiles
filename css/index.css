@@ -1,0 +1,51 @@
+/* Body styling */
+body {
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #fff;
+  user-select: none;
+}
+/* Header styling */
+h1 {
+  font-size: 4em;
+  margin-top: 50px;
+  color: #fff;
+  text-shadow: 5px 5px #222;
+  user-select: none;
+}
+/* Sub-header styling */
+h4 {
+  font-size: 2em;
+  margin-top: 50px;
+  color: #fff;
+  text-shadow: 3px 3px #222;
+  user-select: none;
+}
+/* Form styling */
+form {
+  margin: 50px auto;
+  text-align: center;
+  user-select: none;
+}
+/* Button styling */
+button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 4px #222;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+/* Button hover styling */
+button:hover {
+  background-color: #010101;
+  box-shadow: 4px 4px #fff;
+  transform: scale(1.1);
+  color: #fff;
+}

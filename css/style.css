@@ -1,0 +1,69 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+}
+#back {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: transparent;
+    border: none;
+    color: #ddd;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #back i {
+    vertical-align: middle;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #f6f6f6;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f6f6f6;
+    margin: 2.5em 0 -15px 0;
+}
+h2{
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #4d4d4d;
+    margin: 1em 0;
+}
+
+h5 {
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #4d4d4d;
+    margin: 2em 0 -0.25em;
+}

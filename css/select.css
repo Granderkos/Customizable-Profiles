@@ -1,0 +1,102 @@
+.custom-select {
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: left;
+    background-color: transparent;
+    width: 90%;
+    margin-bottom: 10px;
+    user-select: none;
+    }
+    .game-select
+    {
+        height: 10%;
+        margin-top: 2.5px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        background: transparent;
+        color: #fff !important;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        user-select: none;
+    }
+    #show{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    .squares{
+        display: flex;
+        justify-content: space-evenly;
+        height: 600px;
+        width: 100%;
+        user-select: none;
+    }
+    .square-header{
+        border-radius: 20px;
+        width: 100%;
+        height: 15%;
+        padding: 20px 30px;
+        text-align: center;
+    }
+    .square1
+    {
+        position: relative;
+        display:flex;
+        align-items: center;
+        border-radius: 20px;
+        font-weight: 100;
+        border: 2px solid #fff;
+        height: 700px;
+        width: 350px;
+        background-image: url("../previews/images/preview-aimtrainer.png");
+        background-size:cover;
+        background-position: center;
+        font-size: 50px;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(50px) scale(0.5);
+        transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform 0.5s;
+    }
+    .square1:hover{
+        transform: translateY(-10px) scale(1.1) !important;
+    }    
+    .square2
+    {
+        display:flex;
+        align-items: flex-end;
+        border-radius: 20px;
+        height: 700px;
+        width: 350px;
+        background-color: red;
+        font-size: 50px;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(50px) scale(0.5);
+        transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform 0.5s;
+    }
+    .square2:hover{
+        transform: translateY(-10px) scale(1.1) !important;
+    }
+    .square3
+    {
+        display:flex;
+        align-items: flex-end;
+        border-radius: 20px;
+        height: 700px;
+        width: 350px;
+        background-color: red;
+        font-size: 50px;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(50px) scale(0.5);
+        transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform 0.5s;
+    }
+    .square3:hover{
+        transform: translateY(-10px) scale(1.1) !important;
+    }

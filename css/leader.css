@@ -1,0 +1,116 @@
+html{
+  height:auto;
+}
+/* Add background color and font */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Add some spacing and padding */
+.leaderboard-container {
+  padding: 30px;
+  text-align: center;
+  user-select: none;
+}
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin:auto;
+  border-radius: 7px;
+  box-shadow: 20px #000;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+}
+
+td { 
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+}
+
+td#active {
+  color: #777;
+}
+tr.hidden{
+  display: none;
+}
+td:hover {
+  border-bottom: 2px solid #fff;
+  transform: translateY(-2px);
+}
+tr#header:hover{
+  border-bottom: 0px solid #fff;
+  transform: translateY(0px);
+}
+
+/* Style the pagination buttons */
+button {
+  
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -45px;
+}
+.view-btn{
+  border-radius: 0px;
+  margin-left: 0px;
+  width: 100%;
+  text-align: center;
+
+}
+#back{
+  position:absolute;
+  top: 1.5%;
+  font-size: 30px;
+  margin-left: 0px;
+}
+
+/* Add some hover effect to the select element */
+
+form {
+  display: flex !important;
+}
+
+/* Style the search container */
+.search-container {
+  margin-bottom: 20px;
+}
+
+/* Style the search input */
+#search-input {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  background-color: #000;
+  color: #fff;
+  outline: none;
+  width: 90%;
+}
+/* Add hover effect to search input */
+#search-input:hover{
+   border-bottom: 1px #eee solid;
+   border-right: 1px #eee solid;
+}
+#search-input:focus{
+  border-bottom: 1px #eee solid;
+  border-right: 1px #eee solid;
+  outline: none;
+}
