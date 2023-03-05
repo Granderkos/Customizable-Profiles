@@ -37,7 +37,7 @@ function updateLeaderboard(data) {
     view.setAttribute("name", nameTd.textContent + "-btn");
     view.textContent = "Profile";
     view.addEventListener("click", () => {
-      window.location = ("/New folder/profiles/"+row.name+"-profile.php");
+      window.location = ("/Customizable-Profiles/profiles/"+row.name+"-profile.php");
     });
     let form = document.createElement("form");
     form.setAttribute("method", "POST");
@@ -63,5 +63,5 @@ function active(name){
 
 function profile(){
 
-  window.location = ("/New folder/profiles/"+ name +"-profile.php");
+  window.location = ("/Customizable-Profiles/profiles/"+ name +"-profile.php");
 }

@@ -2,7 +2,7 @@
             session_start();
             include("../controller/connectdb.php");
             $username = explode("-", basename(__FILE__, ".php"))[0];
-            $creation = mysqli_fetch_row($conn->query("SELECT * FROM userdata WHERE username = 'ss'"))[3];
+            $creation = mysqli_fetch_row($conn->query("SELECT * FROM userdata WHERE username = 'bb'"))[3];
             $format = explode("-", $creation);
             $bool = false;
             $select = false;
@@ -46,7 +46,7 @@
                                 </form>
                                 <?php
                                 if (file_exists("../images/banner/$username-banner.png")) {
-                                    echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/ss-banner.png' . ')`;</script>';
+                                    echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/bb-banner.png' . ')`;</script>';
                                 }
                                 else if (file_exists("../images/banner/default_banner.png")) {
                                     echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/default_banner.png' . ')`;</script>';
@@ -65,7 +65,7 @@
                         else
                         {
                             if (file_exists("../images/banner/$username-banner.png")) {
-                                echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/ss-banner.png' . ')`;</script>';
+                                echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/bb-banner.png' . ')`;</script>';
                             }
                             else if (file_exists("../images/banner/default_banner.png")) {
                                 echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/default_banner.png' . ')`;</script>';
@@ -84,7 +84,7 @@
                                     } else {
                                         $_FILES["changebanner"]["name"] = $username."-banner.png";
                                         move_uploaded_file($_FILES["changebanner"]["tmp_name"], "../images/banner/" . $_FILES["changebanner"]["name"]);
-                                        echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/ss-banner.png' . ')`;</script>';
+                                        echo '<script>document.querySelector(`.banner`).style.backgroundImage = `url(' . '../images/banner/bb-banner.png' . ')`;</script>';
                                     }
                                 }
                             }
@@ -116,7 +116,7 @@
                                 <?php
                             }
                             if (file_exists("../images/pfp/$username-pfp.png")) {
-                                echo '<script>document.querySelector(`.pfp`).style.backgroundImage = `url(' . '../images/pfp/ss-pfp.png' . ')`;</script>';
+                                echo '<script>document.querySelector(`.pfp`).style.backgroundImage = `url(' . '../images/pfp/bb-pfp.png' . ')`;</script>';
                             }
                             else if (file_exists("../images/pfp/default_pfp.png")) {
                                 echo '<script>document.querySelector(`.pfp`).style.backgroundImage = `url(' . '../images/pfp/default_pfp.png' . ')`;</script>';
@@ -130,7 +130,7 @@
                                     } else {
                                         $_FILES["changepfp"]["name"] = $username."-pfp.png";
                                         move_uploaded_file($_FILES["changepfp"]["tmp_name"], "../images/pfp/" . $_FILES["changepfp"]["name"]);
-                                        echo '<script>document.querySelector(`.pfp`).style.backgroundImage = `url(' . '../images/pfp/ss-pfp.png' . ')`;</script>';
+                                        echo '<script>document.querySelector(`.pfp`).style.backgroundImage = `url(' . '../images/pfp/bb-pfp.png' . ')`;</script>';
                                     }
                                 }
                             }
@@ -170,7 +170,7 @@
                                         if(strlen($_COOKIE["selected"]) > 0)
                                         {
                                             $name = $_COOKIE["selected"];
-                                            echo mysqli_fetch_row($conn->query("SELECT games FROM ".$name."_data WHERE username = 'ss'"))[0]; 
+                                            echo mysqli_fetch_row($conn->query("SELECT games FROM ".$name."_data WHERE username = 'bb'"))[0]; 
                                         }
                                     }
                                     ?>
@@ -188,7 +188,7 @@
                                     {
                                     if (strlen($_COOKIE["selected"]) > 0) {
                                         $name = $_COOKIE["selected"];
-                                        echo mysqli_fetch_row($conn->query("SELECT highscore FROM " . $name . "_data WHERE username = 'ss'"))[0];
+                                        echo mysqli_fetch_row($conn->query("SELECT highscore FROM " . $name . "_data WHERE username = 'bb'"))[0];
                                     }
                                     }
                                     ?>
