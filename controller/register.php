@@ -74,6 +74,9 @@ session_start();
             } else {
                 header('location: ../guest/index.php');
             }
+            if (!file_exists('../profiles/')) {
+                mkdir('../profiles/', 0777, true);
+            }
             //HTML and PHP creation for new users profile
             $File = fopen("../profiles/" . $username . "-profile.php", "w");
             fwrite($File, '<?php
