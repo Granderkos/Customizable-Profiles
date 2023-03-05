@@ -1,6 +1,6 @@
-CREATE DATABASE `new`;
+CREATE DATABASE `Benchmark`;
 
-use new;
+use Benchmark;
 
 CREATE TABLE `aimtrainer_data` (
   `id` int(200) NOT NULL,
